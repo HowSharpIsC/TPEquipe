@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="Exo1Css.css" />
 </head>
 <body>
 
@@ -27,10 +26,10 @@
     <br>
 
     <label>Couleur bleue </label>
-    <input type="radio" name="bleu" value="bleu"> 
+    <input type="radio" name="couleur" value="bleu"> 
 
     <label>Couleur rouge </label>
-    <input type="radio" name="rouge" value="rouge">
+    <input type="radio" name="couleur" value="rouge">
 
     <br>
 
