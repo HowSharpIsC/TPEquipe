@@ -11,7 +11,28 @@
 
 <form action = "ResultatExo1.php">
 
-<label>Nombre de départ: </label>
+    <label>Nombre de départ: </label>
+    <input type="text">
+
+    <br>
+
+    <label>Nombre de fin: </label>
+    <input type="text">
+
+    <br>
+
+    <label>Pas: </label>
+    <input type="text">
+
+    <br>
+
+    <label>Couleur bleue </label>
+    <input type="radio"> 
+
+    <label>Couleur rouge </label>
+    <input type="radio">
+
+    <input type="submit" value="OK">
 
 </form>
     
