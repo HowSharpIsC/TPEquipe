@@ -9,28 +9,30 @@
 </head>
 <body>
 
-<form action = "ResultatExo1.php">
+<form action = "ResultatExo1.php" method="post">
 
     <label>Nombre de départ: </label>
-    <input type="text">
+    <input type="text" name="depart" required>
 
     <br>
 
     <label>Nombre de fin: </label>
-    <input type="text">
+    <input type="text" name="fin" required>
 
     <br>
 
     <label>Pas: </label>
-    <input type="text">
+    <input type="text" name="pas" required>
 
     <br>
 
     <label>Couleur bleue </label>
-    <input type="radio"> 
+    <input type="radio" name="bleu" value="bleu"> 
 
     <label>Couleur rouge </label>
-    <input type="radio">
+    <input type="radio" name="rouge" value="rouge">
+
+    <br>
 
     <input type="submit" value="OK">
 
