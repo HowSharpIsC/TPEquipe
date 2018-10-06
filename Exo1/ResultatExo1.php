@@ -1,5 +1,11 @@
 <?php
 
+    if (empty($_POST))
+    {
+        header('Location: FormulaireExo1.php');
+        exit;
+    }
+
     require_once("Fonctions.php");
 
 ?>
