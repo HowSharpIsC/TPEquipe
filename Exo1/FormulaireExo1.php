@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-
+<p> salut </p>
 <form action = "ResultatExo1.php" method="post">
 
     <label>Nombre de départ: </label>
