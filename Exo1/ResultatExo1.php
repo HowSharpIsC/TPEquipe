@@ -13,7 +13,6 @@
                     && (filter_input(INPUT_POST, 'fin', FILTER_VALIDATE_INT)) 
                     && (filter_input(INPUT_POST, 'pas', FILTER_VALIDATE_INT)) );
 
-
     if( !$depart || !$fin || !$pas )
     {
         if(!$filtreInt)
