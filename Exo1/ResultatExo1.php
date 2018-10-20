@@ -6,30 +6,6 @@
         exit;
     }
 
-    $depart = (filter_input(INPUT_POST, 'depart', FILTER_VALIDATE_INT));
-    $fin = (filter_input(INPUT_POST, 'fin', FILTER_VALIDATE_INT, array("options" => array("min_range"=>$_POST['depart']))));
-    $pas = (filter_input(INPUT_POST, 'pas', FILTER_VALIDATE_INT, array("options" => array("min_range"=>1))));
-    $filtreInt = ( (filter_input(INPUT_POST, 'depart', FILTER_VALIDATE_INT)) 
-                    && (filter_input(INPUT_POST, 'fin', FILTER_VALIDATE_INT)) 
-                    && (filter_input(INPUT_POST, 'pas', FILTER_VALIDATE_INT)) );
-
-    if( !$depart || !$fin || !$pas )
-    {
-        if(!$filtreInt)
-        {
-            echo "<script> alert('Veuillez entrer uniquement des nombres entiers'); </script>";
-        }
-        elseif(!$fin)
-        {
-            echo "<script> alert('La fin doit être supérieure au début'); </script>";
-        }
-        elseif(!$pas)
-        {
-            echo "<script> alert('Le pas doit être supérieur à 0'); </script>";
-        }
-        echo "<script> window.location.replace('FormulaireExo1.php') </script>";
-    }
-
     require_once("Fonctions.php");
 
 ?>
