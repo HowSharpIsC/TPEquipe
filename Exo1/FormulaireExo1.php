@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,25 +9,29 @@
 <form action = "ResultatExo1.php" method="post">
 
     <label>Nombre de départ: </label>
-    <input id="depart" type="text" name="depart" required>
+    <input id="depart" type="text" value="<?php if (!empty($_POST['depart'])) echo $_POST['depart']; ?>" name="depart" >
 
     <br>
 
     <label>Nombre de fin: </label>
-    <input id="fin" type="text" name="fin" required>
+    <input id="fin" type="text" value="<?php if (!empty($_POST['fin'])) echo $_POST['fin']; ?>" name="fin" >
 
     <br>
 
     <label>Pas: </label>
-    <input id="pas" type="text" name="pas" required>
+    <input id="pas" type="text" value="<?php if (!empty($_POST['pas'])) echo $_POST['pas']; ?>" name="pas" >
 
     <br>
 
     <label>Couleur bleue </label>
-    <input type="radio" name="couleur" value="bleu" required> 
+    <input id="bleu" type="radio" name="couleur" value="bleu" 
+            <?php if (!empty($_POST['couleur']) && $_POST['couleur'] == "bleu") echo "checked"; ?>
+    >
 
     <label>Couleur rouge </label>
-    <input type="radio" name="couleur" value="rouge" required>
+    <input id="rouge" type="radio" name="couleur" value="rouge" 
+            <?php if (!empty($_POST['couleur']) && $_POST['couleur'] == "rouge") echo "checked"; ?>
+    >
 
     <br>
 
